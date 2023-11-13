@@ -1,0 +1,85 @@
+@import 'vendor/normalize.scss';
+@import 'variables.scss';
+
+// малые компоненты
+
+@import 'components/btn.scss';
+@import 'components/title.scss';
+
+// большие компоненты
+
+@import 'components/utp.scss';
+@import 'components/gift.scss';
+@import 'components/about.scss';
+@import 'components/get.scss';
+
+
+@font-face {
+  font-weight: 400;
+  font-family: 'Euclid Circular A';
+  src: url('/assets/fonts/EuclidCircularA-Regular.woff2');
+}
+
+@font-face {
+  font-weight: 500;
+  font-family: 'Euclid Circular A';
+  src: url('/assets/fonts/EuclidCircularA-Medium.woff2');
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: 'Euclid Circular A';
+  src: url('/assets/fonts/EuclidCircularA-Bold.woff2');
+}
+
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #1E1E1E;
+  font-weight: 400;
+  font-family: 'Euclid Circular A', 'Inter', sans-serif;
+  background-color: white;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  box-sizing: border-box;
+  max-width: 1395px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+
+  @media (max-width: 1600px) {
+    max-width: 1054px;
+  }
+
+  @media (max-width: 1300px) {
+    max-width: 1280px;
+    padding: 0 32px;
+  }
+
+  @media (max-width: 768px) {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+}
+
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}

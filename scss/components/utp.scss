@@ -1,0 +1,212 @@
+.utp {
+  position: relative;
+  padding: 177px 0 127px;
+  background-color: #FBEBE8;
+
+  @media (max-width: 1600px) {
+    padding: 142px 0 154px;
+  }
+
+  @media (max-width: 1400px) {
+    background-color: #fff;
+  }
+
+
+  @media (max-width: 1300px) {
+    padding: 130px 0 130px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 56px 0 50px;
+    overflow: hidden;
+    background-color:#FBEBE8;
+  }
+
+  &__wrapper {
+    position: relative;
+    z-index: 12;
+    padding-left: 87px;
+
+    @media (max-width: 1600px) {
+      padding-left: 30px;
+    }
+
+    @media (max-width: 1300px) {
+      padding-left: 0;
+    }
+  }
+
+  &__left {
+    position: absolute;
+    top: -160px;
+    left: calc(-1640px + 100%);
+    z-index: 3;
+    width: 424px;
+    background-repeat: no-repeat;
+
+    img {
+      width: 100%;
+    }
+
+    @media (max-width: 1600px) {
+      // left: calc(-1310px + 100%);
+      // width: 377px;
+      // top: -140px;
+      display: none;
+    }
+  }
+
+  &__bg {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    display: none;
+    width: 100%;
+    object-fit: cover;
+
+
+    img {
+      width: 100%;
+    }
+
+    @media (max-width: 1600px) {
+
+      display: block;
+    }
+
+    @media (max-width: 1400px) {
+      z-index: 5;
+      top: 0;
+    }
+
+    @media (max-width: 1300px) {
+      img {
+        width: auto;
+      }
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__right {
+    position: absolute;
+    top: -351px;
+    right: calc(-1650px + 100%);
+    z-index: 3;
+    width: 1329px;
+
+    img {
+      width: 100%;
+    }
+
+    .mobile {
+      display: none;
+    }
+
+
+    @media (max-width: 1600px) {
+      display: none;
+    }
+
+
+
+    // @media (max-width: 1465px) {
+    //   right: calc(-1615px + 15px + 100%);
+    // }
+
+
+
+    @media (max-width: 767px) {
+      img {
+        display: none;
+      }
+
+      .mobile {
+        display: block;
+      }
+
+      top: -168px;
+      right: -15px;
+      display: block;
+      width: 256px;
+    }
+
+    @media (max-width: 374px) {
+      right: calc(-359px + 100%);
+    }
+  }
+
+
+
+  h1 {
+    position: relative;
+    max-width: 645px;
+    margin: 0 0 73px;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 110%;
+    text-transform: uppercase;
+
+    &::after {
+      position: absolute;
+      top: 90px;
+      right: 210px;
+      width: 47px;
+      height: 47px;
+      background-image: url('../img/utp-stars.png');
+      background-size: cover;
+      content: '';
+    }
+
+    span {
+      color: #FC3F1D;
+      font-weight: 500;
+    }
+
+    @media (max-width: 1600px) {
+      font-size: 58px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 110%;
+      text-transform: uppercase;
+      margin-bottom: 60px;
+      max-width: 520px;
+
+      &::after {
+        width: 37px;
+        height: 37px;
+        top: 74px;
+        right: 174px;
+      }
+    }
+
+    @media (max-width: 1300px) {
+      font-size: 52px;
+      line-height: 110%;
+      margin-bottom: 44px;
+
+      &::after {
+        top: 67px;
+        right: 214px;
+        width: 29px;
+        height: 29px;
+      }
+    }
+
+    @media (max-width: 767px) {
+      max-width: 215px;
+      margin-bottom: 24px;
+      font-size: 24px;
+      line-height: 110%;
+
+      &::after {
+        top: 28px;
+        right: 69px;
+        width: 19px;
+        height: 19px;
+      }
+    }
+  }
+}
